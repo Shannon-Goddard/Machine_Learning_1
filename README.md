@@ -109,6 +109,8 @@ The concept of **ensemble learning** is the process of combining multiple models
 **Oversampling** is a strategy used where the idea is simple and intuitive: If one class has too few instances in the training set, we choose more instances from that class for training until it’s larger.  
 
 - **Class imbalance** refers to a situation in which the existing classes in a dataset aren’t equally represented.
+  
+**Random oversampling** is instances where the minority class are randomly selected and added to the training set until the majority and minority classes are balanced.  
 
 The **synthetic minority oversampling technique (SMOTE)** is another oversampling approach to deal with unbalanced datasets. In SMOTE, like random oversampling, the size of the minority is increased.
 
