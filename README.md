@@ -31,24 +31,24 @@ In this module, we used Python to build and evaluate several machine learning mo
 
 ## Summary  
 ### Explain how a machine learning algorithm is used in data analytics.  
-#### Machine learning is the use of statistical algorithms to perform tasks such as learning from data patterns and making predictions. There are many different models.  
+Machine learning is the use of statistical algorithms to perform tasks such as learning from data patterns and making predictions. There are many different models.  
 
 - A **model** is a mathematical representation of something that happens in the real world.  
 
-#### Machine learning can be divided into three learning categories: supervised, unsupervised, and deep. For our purposes, we only discussed supervised and unsupervised learning.  
+Machine learning can be divided into three learning categories: supervised, unsupervised, and deep. For our purposes, we only discussed supervised and unsupervised learning.  
 
 - **Supervised** learning deals with labeled data.  
 - **Unsupervised** learning algorithms work with datasets without labeled outcomes.   
 
 In supervised learning, the labels provide the correct answers. In unsupervised learning, such correct answers, or labels, aren’t provided.  
 
-#### Supervised learning can be broadly divided into regression and classification. 
+Supervised learning can be broadly divided into regression and classification. 
 
 - **Regression** is used to predict continuous variables.The regression model’s algorithms attempt to learn patterns that exist among factors given. If presented with new data, the model will make a prediction, based on previously learned patterns from the dataset.  
 
 - **Classification** is used to predict discrete outcomes.The classification model’s algorithms attempts to learn patterns from the data, and if the model is successful, gain the ability to make accurate predictions.  
   
-#### There is a major difference between regression and classification models. In regression a continuous variable can be any numerical value within a certain range. In classification, on the other hand, the target variable only has two possible values.  
+There is a major difference between regression and classification models. In regression a continuous variable can be any numerical value within a certain range. In classification, on the other hand, the target variable only has two possible values.  
 
 **A basic pattern applies whether we’re using regression or classification:**
 - A machine learning model is presented with a dataset.
@@ -62,11 +62,11 @@ In supervised learning, the labels provide the correct answers. In unsupervised 
 ### Implement the logistic regression, decision tree, random forest, and support vector machine algorithms.  
 **Logistic regression** predicts binary outcomes, meaning that there are only two possible outcomes. In other words, a logistic regression model analyzes the available data, and when presented with a new sample, mathematically determines its probability of belonging to a class. If the probability is above a certain cutoff point, the sample is assigned to that class. If the probability is less than the cutoff point, the sample is assigned to the other class.  
 
-**Decision trees** are used in decision analysis. They encode a series of true/false questions that are represented by a series of if/else statements and are one of the most interpretable models, as they provide a clear representation of how the model works.   
+**Decision trees** are used in decision analysis. They encode a series of *true/false* questions that are represented by a series of *if/else* statements and are one of the most interpretable models, as they provide a clear representation of how the model works.   
 
 **Random Forests** does not have a complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.   
   
-**Random forest algorithms are beneficial because they:**
+Random forest algorithms are beneficial because they:
 - Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
 - Can be used to rank the importance of input variables in a natural way.
 - Can handle thousands of input variables without variable deletion.
@@ -76,7 +76,7 @@ In supervised learning, the labels provide the correct answers. In unsupervised 
 **Support vector machine (SVM)**, like logistic regression, is a binary classifier. It can categorize samples into one of two categories. There is a strict cutoff line that divides one classification from the other.
 
 ### Interpret the results of the logistic regression, decision tree, random forest, and support vector machine algorithms.  
-**The results in the classification report:**
+The results in the classification report:
 - **Precision** is the measure of how reliable a positive classification is. The precision can be determined by the ratio: TP/(TP + FP). A low precision is indicative of a large number of false positives.  
 
 - **Recall** is the ability of the classifier to find all the positive samples. It can be determined by the ratio: TP/(TP + FN). A low recall is indicative of a large number of false negatives.  
