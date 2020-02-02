@@ -44,17 +44,13 @@ In supervised learning, the labels provide the correct answers. In unsupervised 
 
 Supervised learning can be broadly divided into regression and classification. 
 
-- **Regression** is used to predict continuous variables.  
+- **Regression** is used to predict continuous variables.The regression model’s algorithms attempt to learn patterns that exist among factors given. If presented with new data, the model will make a prediction, based on previously learned patterns from the dataset.  
 
-The regression model’s algorithms attempt to learn patterns that exist among factors given. If presented with new data, the model will make a prediction, based on previously learned patterns from the dataset.  
-
-- **Classification** is used to predict discrete outcomes.  
-
-The classification model’s algorithms attempts to learn patterns from the data, and if the model is successful, gain the ability to make accurate predictions.  
+- **Classification** is used to predict discrete outcomes.The classification model’s algorithms attempts to learn patterns from the data, and if the model is successful, gain the ability to make accurate predictions.  
   
 There is a major difference between regression and classification models. In regression a continuous variable can be any numerical value within a certain range. In classification, on the other hand, the target variable only has two possible values.  
 
-A basic pattern applies whether we’re using regression or classification:
+**A basic pattern applies whether we’re using regression or classification:**
 - A machine learning model is presented with a dataset.
 - The model algorithms analyze the data and attempt to identify patterns.
 - Based on these patterns, the model makes predictions on new data.
@@ -69,6 +65,7 @@ A basic pattern applies whether we’re using regression or classification:
 **Decision trees** are used in decision analysis. They encode a series of true/false questions that are represented by a series of if/else statements and are one of the most interpretable models, as they provide a clear representation of how the model works.   
 
 **Random Forests** does not have a complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.   
+  
 **Random forest algorithms are beneficial because they:**
 - Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
 - Can be used to rank the importance of input variables in a natural way.
