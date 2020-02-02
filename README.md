@@ -50,15 +50,18 @@ Supervised learning can be broadly divided into regression and classification.
   
 There is a major difference between regression and classification models. In regression a continuous variable can be any numerical value within a certain range. In classification, on the other hand, the target variable only has two possible values.  
 
-**A basic pattern applies whether we’re using regression or classification:**
+
+A basic pattern applies whether we’re using regression or classification:
 - A machine learning model is presented with a dataset.
 - The model algorithms analyze the data and attempt to identify patterns.
 - Based on these patterns, the model makes predictions on new data.
 
+
 ### Create training and test groups from a given data set.  
 -**Training** dataset to learn from it.  
--**Testing** dataset to assess its performance.
-  
+-**Testing** dataset to assess its performance.   
+
+
 ### Implement the logistic regression, decision tree, random forest, and support vector machine algorithms.  
 **Logistic regression** predicts binary outcomes, meaning that there are only two possible outcomes. In other words, a logistic regression model analyzes the available data, and when presented with a new sample, mathematically determines its probability of belonging to a class. If the probability is above a certain cutoff point, the sample is assigned to that class. If the probability is less than the cutoff point, the sample is assigned to the other class.  
 
@@ -73,7 +76,8 @@ Random forest algorithms are beneficial because they:
 - Are robust to outliers and nonlinear data.
 - Run efficiently on large datasets.  
 
-**Support vector machine (SVM)**, like logistic regression, is a binary classifier. It can categorize samples into one of two categories. There is a strict cutoff line that divides one classification from the other.
+**Support vector machine (SVM)**, like logistic regression, is a binary classifier. It can categorize samples into one of two categories. There is a strict cutoff line that divides one classification from the other.  
+
 
 ### Interpret the results of the logistic regression, decision tree, random forest, and support vector machine algorithms.  
 The results in the classification report:
@@ -84,6 +88,7 @@ The results in the classification report:
 - **F1 score** is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0  
 - **Support** is the number of actual occurrences of the class in the specified dataset.  
 
+
 ### Compare the advantages and disadvantages of each supervised learning algorithm.  
 The **Logistic regression** model can make predictions beyond the range in the current data.  
 
@@ -93,11 +98,13 @@ The **Logistic regression** model can make predictions beyond the range in the c
 
 **SVM** works by separating the two classes in a dataset with the widest possible margins. The margins, however, are soft and can make exceptions for outliers. This stands in contrast to the logistic regression model. In logistic regression, any data point whose probability of belonging to one class exceeds the cutoff point belongs to that class; all other data points belong to the other class.  
 
+
 ### Determine which supervised learning algorithm is best used for a given data set or scenario.  
 Modeling is an iterative process: you may need more data, more cleaning, another model parameter, or a different model. It’s also important to have a goal that’s been agreed upon, so that you know when the model is good enough.  
 
+
 ### Use ensemble and resampling techniques to improve model performance.  
-**The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model.**  
+The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model.  
 
 A downside of oversampling with SMOTE is its reliance on the immediate neighbors of a data point. Because the algorithm doesn’t see the overall distribution of data, the new data points it creates can be heavily influenced by outliers. This can lead to noisy data. With downsampling, the downsides are that it involves loss of data and is not an option when the dataset is small. One way to deal with these challenges is to use a sampling strategy that is a combination of oversampling and undersampling.  
 
@@ -105,6 +112,9 @@ A downside of oversampling with SMOTE is its reliance on the immediate neighbors
 **SMOTEENN is a two-step process:**
 - 1. Oversample the minority class with SMOTE.
 - 2. Clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped.  
+
+
+
 
 ## Challenge Overview  
 In this challenge, we built and evaluated several machine learning models to assess credit risk, using data from LendingClub; a peer-to-peer lending services company.  
