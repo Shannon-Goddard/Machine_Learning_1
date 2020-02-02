@@ -62,18 +62,21 @@ A basic pattern applies whether we’re using regression or classification:
 ### Create training and test groups from a given data set.  
 -**Training** dataset to learn from it.  
 -**Testing** dataset to assess its performance.
+  
 ### Implement the logistic regression, decision tree, random forest, and support vector machine algorithms.  
 **Logistic regression** predicts binary outcomes, meaning that there are only two possible outcomes. In other words, a logistic regression model analyzes the available data, and when presented with a new sample, mathematically determines its probability of belonging to a class. If the probability is above a certain cutoff point, the sample is assigned to that class. If the probability is less than the cutoff point, the sample is assigned to the other class.  
 
-**Decision trees** are used in decision analysis. They encode a series of true/false questions that are represented by a series of if/else statements and are one of the most interpretable models, as they provide a clear representation of how the model works. Decision trees are natural ways in which you can classify or label objects by asking a series of questions designed to zero in on the true answer. However, decision trees can become very complex and very deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data and do not generalize well.  
+**Decision trees** are used in decision analysis. They encode a series of true/false questions that are represented by a series of if/else statements and are one of the most interpretable models, as they provide a clear representation of how the model works.   
 
-**Random Forests** does not have a complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features. These simple trees are weak learners because they are created by randomly sampling the data and creating a decision tree for only that small portion of data. And since they are trained on a small piece of the original data, they are only slightly better than a random guess. However, many slightly better than average small decision trees can be combined to create a strong learner, which has much better decision making power.  
+**Random Forests** does not have a complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.   
 **Random forest algorithms are beneficial because they:**
 - Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
 - Can be used to rank the importance of input variables in a natural way.
 - Can handle thousands of input variables without variable deletion.
 - Are robust to outliers and nonlinear data.
-- Run efficiently on large datasets.
+- Run efficiently on large datasets.  
+
+**Support vector machine (SVM)**, like logistic regression, is a binary classifier. It can categorize samples into one of two categories. There is a strict cutoff line that divides one classification from the other.
 
 ### Interpret the results of the logistic regression, decision tree, random forest, and support vector machine algorithms.  
 The results in the classification report:
@@ -82,9 +85,13 @@ The results in the classification report:
 F1 score: F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
 - **Support** is the number of actual occurrences of the class in the specified dataset.  
 
-**Support vector machine (SVM)**, like logistic regression, is a binary classifier. It can categorize samples into one of two categories. There is a strict cutoff line that divides one classification from the other.
-
 ### Compare the advantages and disadvantages of each supervised learning algorithm.  
+The **Logistic regression** model can make predictions beyond the range in the current data.  
+
+**Decision trees** are natural ways in which you can classify or label objects by asking a series of questions designed to zero in on the true answer. However, decision trees can become very complex and very deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data and do not generalize well.  
+
+**Random Forests**, simple trees, are weak learners because they are created by randomly sampling the data and creating a decision tree for only that small portion of data. And since they are trained on a small piece of the original data, they are only slightly better than a random guess. However, many slightly better than average small decision trees can be combined to create a strong learner, which has much better decision making power.  
+
 **SVM** works by separating the two classes in a dataset with the widest possible margins. The margins, however, are soft and can make exceptions for outliers. This stands in contrast to the logistic regression model. In logistic regression, any data point whose probability of belonging to one class exceeds the cutoff point belongs to that class; all other data points belong to the other class.  
 
 ### Determine which supervised learning algorithm is best used for a given data set or scenario.  
