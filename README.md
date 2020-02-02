@@ -104,7 +104,13 @@ Modeling is an iterative process: you may need more data, more cleaning, another
 
 
 ### Use ensemble and resampling techniques to improve model performance.  
-The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model.  
+The concept of **ensemble learning** is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model.  
+
+**Oversampling** is a strategy used where the idea is simple and intuitive: If one class has too few instances in the training set, we choose more instances from that class for training until it’s larger.  
+
+- **Class imbalance** refers to a situation in which the existing classes in a dataset aren’t equally represented.
+
+The **synthetic minority oversampling technique (SMOTE)** is another oversampling approach to deal with unbalanced datasets. In SMOTE, like random oversampling, the size of the minority is increased.
 
 A downside of oversampling with SMOTE is its reliance on the immediate neighbors of a data point. Because the algorithm doesn’t see the overall distribution of data, the new data points it creates can be heavily influenced by outliers. This can lead to noisy data. With downsampling, the downsides are that it involves loss of data and is not an option when the dataset is small. One way to deal with these challenges is to use a sampling strategy that is a combination of oversampling and undersampling.  
 
