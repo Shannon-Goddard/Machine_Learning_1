@@ -18,7 +18,7 @@ In this module, we used Python to build and evaluate several machine learning mo
 
 ## Resources
 - **Data Source:** []()
-- **Software:**   
+- **Software:** Python and Scikit-learn  
 
 ## Objectives  
 - Explain how a machine learning algorithm is used in data analytics.
