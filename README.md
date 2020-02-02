@@ -117,6 +117,7 @@ The **synthetic minority oversampling technique (SMOTE)** is another oversamplin
 A downside of oversampling with SMOTE is its reliance on the immediate neighbors of a data point. Because the algorithm doesn’t see the overall distribution of data, the new data points it creates can be heavily influenced by outliers. This can lead to noisy data. With downsampling, the downsides are that it involves loss of data and is not an option when the dataset is small. One way to deal with these challenges is to use a sampling strategy that is a combination of oversampling and undersampling.  
 
 **SMOTEENN** combines the **SMOTE** and **Edited Nearest Neighbors (ENN)** algorithms.  
+
 SMOTEENN is a two-step process:
 - 1. Oversample the minority class with SMOTE.
 - 2. Clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped.  
