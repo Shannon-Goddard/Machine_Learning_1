@@ -30,13 +30,74 @@ In this module, we used Python to build and evaluate several machine learning mo
 - Use ensemble and resampling techniques to improve model performance.
 
 ## Summary  
-### Explain how a machine learning algorithm is used in data analytics.
-### Create training and test groups from a given data set.
-### Implement the logistic regression, decision tree, random forest, and support vector machine algorithms.
-### Interpret the results of the logistic regression, decision tree, random forest, and support vector machine algorithms.
-### Compare the advantages and disadvantages of each supervised learning algorithm.
-### Determine which supervised learning algorithm is best used for a given data set or scenario.
-### Use ensemble and resampling techniques to improve model performance. 
+### Explain how a machine learning algorithm is used in data analytics.  
+Machine learning is the use of statistical algorithms to perform tasks such as learning from data patterns and making predictions. There are many different models.  
+
+- A **model** is a mathematical representation of something that happens in the real world.  
+
+Broadly speaking, machine learning can be divided into three learning categories: supervised, unsupervised, and deep. For our purposes, we only discussed supervised and unsupervised learning.  
+
+- **Supervised** learning deals with labeled data.  
+- **Unsupervised** learning algorithms work with datasets without labeled outcomes.   
+
+In supervised learning, the labels provide the correct answers. In unsupervised learning, such correct answers, or labels, aren’t provided.  
+
+Supervised learning can be broadly divided into regression and classification. 
+
+- **Regression** is used to predict continuous variables.  
+
+The regression model’s algorithms attempt to learn patterns that exist among factors given. If presented with new data, the model will make a prediction, based on previously learned patterns from the dataset.  
+
+- **Classification** is used to predict discrete outcomes.  
+
+The classification model’s algorithms attempts to learn patterns from the data, and if the model is successful, gain the ability to make accurate predictions.  
+  
+There is a major difference between regression and classification models. In regression a continuous variable can be any numerical value within a certain range. In classification, on the other hand, the target variable only has two possible values.  
+
+A basic pattern applies whether we’re using regression or classification:
+- A machine learning model is presented with a dataset.
+- The model algorithms analyze the data and attempt to identify patterns.
+- Based on these patterns, the model makes predictions on new data.
+
+### Create training and test groups from a given data set.  
+-**Training** dataset to learn from it.  
+-**Testing** dataset to assess its performance.
+### Implement the logistic regression, decision tree, random forest, and support vector machine algorithms.  
+**Logistic regression** predicts binary outcomes, meaning that there are only two possible outcomes. In other words, a logistic regression model analyzes the available data, and when presented with a new sample, mathematically determines its probability of belonging to a class. If the probability is above a certain cutoff point, the sample is assigned to that class. If the probability is less than the cutoff point, the sample is assigned to the other class.  
+
+**Decision trees** are used in decision analysis. They encode a series of true/false questions that are represented by a series of if/else statements and are one of the most interpretable models, as they provide a clear representation of how the model works. Decision trees are natural ways in which you can classify or label objects by asking a series of questions designed to zero in on the true answer. However, decision trees can become very complex and very deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data and do not generalize well.  
+
+**Random Forests** does not have a complex tree like the ones created by decision trees, a random forest algorithm will sample the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features. These simple trees are weak learners because they are created by randomly sampling the data and creating a decision tree for only that small portion of data. And since they are trained on a small piece of the original data, they are only slightly better than a random guess. However, many slightly better than average small decision trees can be combined to create a strong learner, which has much better decision making power.  
+**Random forest algorithms are beneficial because they:**
+- Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
+- Can be used to rank the importance of input variables in a natural way.
+- Can handle thousands of input variables without variable deletion.
+- Are robust to outliers and nonlinear data.
+- Run efficiently on large datasets.
+
+### Interpret the results of the logistic regression, decision tree, random forest, and support vector machine algorithms.  
+The results in the classification report:
+- **Precision** is the measure of how reliable a positive classification is. From our results, the precision for the good loan applications can be determined by the ratio TP/(TP + FP), which is 50/(50 + 22) = 0.69. The precision for the bad loan applications can be determined as follows: 19/(19 + 34) = 0.358. A low precision is indicative of a large number of false positives—of the 53 loan applications we predicted to be bad applications, 34 were actually good loan applications.
+- **Recall** is the ability of the classifier to find all the positive samples.It can be determined by the ratio: TP/(TP + FN), or 50/(50 + 34) = 0.595 for the good loans and 19/(19 + 22) = 0.463 for the bad loans. A low recall is indicative of a large number of false negatives.
+F1 score: F1 score is a weighted average of the true positive rate (recall) and precision, where the best score is 1.0 and the worst is 0.0.
+- **Support** is the number of actual occurrences of the class in the specified dataset.  
+
+**Support vector machine (SVM)**, like logistic regression, is a binary classifier. It can categorize samples into one of two categories. There is a strict cutoff line that divides one classification from the other.
+
+### Compare the advantages and disadvantages of each supervised learning algorithm.  
+**SVM** works by separating the two classes in a dataset with the widest possible margins. The margins, however, are soft and can make exceptions for outliers. This stands in contrast to the logistic regression model. In logistic regression, any data point whose probability of belonging to one class exceeds the cutoff point belongs to that class; all other data points belong to the other class.  
+
+### Determine which supervised learning algorithm is best used for a given data set or scenario.  
+Modeling is an iterative process: you may need more data, more cleaning, another model parameter, or a different model. It’s also important to have a goal that’s been agreed upon, so that you know when the model is good enough.  
+
+### Use ensemble and resampling techniques to improve model performance.  
+The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model.  
+
+A downside of oversampling with SMOTE is its reliance on the immediate neighbors of a data point. Because the algorithm doesn’t see the overall distribution of data, the new data points it creates can be heavily influenced by outliers. This can lead to noisy data. With downsampling, the downsides are that it involves loss of data and is not an option when the dataset is small. One way to deal with these challenges is to use a sampling strategy that is a combination of oversampling and undersampling.  
+
+**SMOTEENN** combines the **SMOTE** and **Edited Nearest Neighbors (ENN)** algorithms. SMOTEENN is a two-step process:
+- 1. Oversample the minority class with SMOTE.
+- 2. Clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped.  
 
 ## Challenge Overview  
 In this challenge, we built and evaluated several machine learning models to assess credit risk, using data from LendingClub; a peer-to-peer lending services company.  
