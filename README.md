@@ -77,7 +77,7 @@ In supervised learning, the labels provide the correct answers. In unsupervised 
 
 ### Interpret the results of the logistic regression, decision tree, random forest, and support vector machine algorithms.  
 **The results in the classification report:**
-- **Precision** is the measure of how reliable a positive classification is. The precision can be determined by the ratio TP/(TP + FP). A low precision is indicative of a large number of false positives.  
+- **Precision** is the measure of how reliable a positive classification is. The precision can be determined by the ratio: TP/(TP + FP). A low precision is indicative of a large number of false positives.  
 
 - **Recall** is the ability of the classifier to find all the positive samples. It can be determined by the ratio: TP/(TP + FN). A low recall is indicative of a large number of false negatives.  
 
@@ -97,11 +97,12 @@ The **Logistic regression** model can make predictions beyond the range in the c
 Modeling is an iterative process: you may need more data, more cleaning, another model parameter, or a different model. It’s also important to have a goal that’s been agreed upon, so that you know when the model is good enough.  
 
 ### Use ensemble and resampling techniques to improve model performance.  
-The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model.  
+**The concept of ensemble learning is the process of combining multiple models, like decision tree algorithms, to help improve the accuracy and robustness, as well as decrease variance of the model, and therefore increase the overall performance of the model.**  
 
 A downside of oversampling with SMOTE is its reliance on the immediate neighbors of a data point. Because the algorithm doesn’t see the overall distribution of data, the new data points it creates can be heavily influenced by outliers. This can lead to noisy data. With downsampling, the downsides are that it involves loss of data and is not an option when the dataset is small. One way to deal with these challenges is to use a sampling strategy that is a combination of oversampling and undersampling.  
 
-**SMOTEENN** combines the **SMOTE** and **Edited Nearest Neighbors (ENN)** algorithms. SMOTEENN is a two-step process:
+**SMOTEENN** combines the **SMOTE** and **Edited Nearest Neighbors (ENN)** algorithms.  
+**SMOTEENN is a two-step process:**
 - 1. Oversample the minority class with SMOTE.
 - 2. Clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped.  
 
