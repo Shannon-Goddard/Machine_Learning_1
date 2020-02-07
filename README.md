@@ -15,7 +15,7 @@ In 2019, more than 19 million Americans had at least one unsecured personal loan
 In this module, we used Python to build and evaluate several machine learning models to predict credit risk. Being able to predict credit risk with machine learning algorithms can help banks and financial institutions predict anomalies, reduce risk cases, monitor portfolios, and provide recommendations on what to do in cases of fraud. 
 
 ## Resources
-- **Data Source:** []()
+- **Data Source:** [LoanStats_2019Q1.csv](/Challenge/Resources/LoanStats_2019Q1.zip)
 - **Software:** Python and Scikit-learn  
 
 ## Objectives  
