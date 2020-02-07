@@ -134,6 +134,7 @@ Credit risk is an inherently unbalanced classification problem, as the number of
 - Evaluate the performance of machine learning models.
 
 ## Challenge Summary  
+[credit_risk_resampling.ipynb](/Challenge/Notebook/credit_risk_resampling.ipynb)
 We used the imbalanced-learn library to resample the data and built and evaluated logistic regression classifiers using the resampled data.
 - Oversample the data using the RandomOverSampler and SMOTE algorithms.
 - Undersample the data using the cluster centroids algorithm.
