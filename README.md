@@ -57,8 +57,8 @@ A basic pattern applies whether we’re using regression or classification:
 
 
 ### Create training and test groups from a given data set.  
--**Training** dataset to learn from it.  
--**Testing** dataset to assess its performance.   
+- **Training** dataset to learn from it.  
+- **Testing** dataset to assess its performance.   
 
 
 ### Implement the logistic regression, decision tree, random forest, and support vector machine algorithms.  
