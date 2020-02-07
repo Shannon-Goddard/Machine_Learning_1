@@ -148,7 +148,8 @@ For each of the above:
 
 We wrote a brief summary and analysis of the models’ performance. In the analysis, we described the precision and recall scores, as well as the balanced accuracy score. We, also, included a final recommendation on the model to use, if any. If we did not recommend any of the models, we justified our reasoning.  
 
-#### Extension
+#### Extension  
+[credit_risk_ensemble.ipynb](/Challenge/Notebook/credit_risk_ensemble.ipynb)
 For the extension, we trained and compared two different ensemble classifiers to predict loan risk and evaluated each model.  
 
 - Train the model and generate predictions.
